@@ -1,0 +1,36 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable comma-dangle */
+/* eslint-disable padded-blocks */
+/* eslint-disable semi */
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-underscore-dangle */
+
+const routes = (handler) => [
+    {
+        method: 'POST',
+        path: '/notes',
+        handler: handler.postNoteHandler
+    },
+    {
+        method: 'GET',
+        path: '/notes',
+        handler: handler.getNotesHandler
+    },
+    {
+        method: 'GET',
+        path: '/notes/{id}',
+        handler: handler.getNoteByIdHandler
+    },
+    {
+        method: 'PUT',
+        path: '/notes/{id}',
+        handler: handler.putNoteByIdHandler
+    },
+    {
+        method: 'DELETE',
+        path: '/notes/{id}',
+        handler: handler.deleteNoteByIdHandler
+    }
+]
+
+module.exports = routes
