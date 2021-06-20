@@ -1,9 +1,4 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable comma-dangle */
-/* eslint-disable padded-blocks */
-/* eslint-disable semi */
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-underscore-dangle */
+/* eslint-disable */
 
 const routes = (handler) => [
     {
