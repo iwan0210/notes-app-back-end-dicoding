@@ -36,6 +36,8 @@ const ExportsValidator = require('./validator/exports')
 const uploads = require('./api/uploads')
 const StorageService = require('./services/storage/StorageService')
 const UploadsValidator = require('./validator/uploads')
+// use S3 Bucket
+// const = StorageService = require('./services/S3/StorageService)
 
 const init = async () => {
   const collaborationsService = new CollaborationsService()
@@ -43,6 +45,8 @@ const init = async () => {
   const usersService = new UsersService()
   const authenticationsService = new AuthenticationsService()
   const storageService = new StorageService(path.resolve(__dirname, 'api/uploads/file/images'))
+  // use S3 Bucket
+  //const storageService = new StorageService()
 
   const server = Hapi.server({
     port: process.env.PORT,
