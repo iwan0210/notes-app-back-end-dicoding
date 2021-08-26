@@ -3,3 +3,4 @@ node_modules
 .prod.env
 dicoding-ecforrds.pem
 ssh.txt
+src/api/uploads/file
